@@ -1,28 +1,28 @@
 # flutter_screen_recording
 
-A new Flutter plugin for record the screen. This plug-in requires Android SDK 21+ and iOS 10+
+A new Flutter plugin for share the screen. This plug-in requires Android SDK 21+ and iOS 10+ and web
 
 
 
 ## Getting Started
 
-This plugin can be used for record the screen on Android and iOS devices.
+This plugin can be used for share the screen on Android and iOS devices and web.
 
 1) For start the recording
 
 ```dart
-bool started = FlutterScreenRecording.startRecordScreen(videoName);
+bool started = FlutterScreenRecording.StartShareScreen(videoName);
 ```
 Or
 
 ```dart
-bool started = FlutterScreenRecording.startRecordScreenAndAudio(videoName);
+bool started = FlutterScreenRecording.startShareScreenAndAudio(videoName);
 ```
 
 2) For stop the recording
 
 ```dart
-String path = FlutterScreenRecording.stopRecordScreen;
+String path = FlutterScreenRecording.stopShareScreen;
 ```
 
 ## Android

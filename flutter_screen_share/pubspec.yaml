@@ -11,8 +11,8 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_foreground_task: ^8.1.0
-  flutter_screen_recording_platform_interface: ^1.0.3
-  flutter_screen_recording_web: ^1.0.8
+  screen_share_platform_interface: ^1.0.3
+  flutter_screen_sharing_web: ^1.0.8
 
 dev_dependencies:
   flutter_test:
@@ -21,10 +21,4 @@ dev_dependencies:
 flutter:
   plugin:
     platforms:
-      android:
-        package: com.isvisoft.flutter_screen_recording
-        pluginClass: FlutterScreenRecordingPlugin
-      ios:
-        pluginClass: FlutterScreenRecordingPlugin
-      web:
         default_package: flutter_screen_recording_web

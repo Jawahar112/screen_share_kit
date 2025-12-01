@@ -1,4 +1,4 @@
-library flutter_screen_recording_web;
+library flutter_screen_sharing_web;
 
 import 'dart:async';
 import 'dart:html';
