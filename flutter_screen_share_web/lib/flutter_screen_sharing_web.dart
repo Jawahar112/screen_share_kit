@@ -6,10 +6,10 @@ import 'dart:js';
 
 import 'interop/get_display_media.dart';
 
-import 'package:flutter_screen_recording_platform_interface/flutter_screen_recording_platform_interface.dart';
+import 'package:screen_share_platform_interface/flutter_screen_recording_platform_interface.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
-class WebFlutterScreenRecording extends FlutterScreenRecordingPlatform {
+class WebFlutterScreenRecording extends FlutterScreenSharingPlatform {
   MediaStream? stream;
   String? name;
   MediaRecorder? mediaRecorder;
@@ -17,7 +17,7 @@ class WebFlutterScreenRecording extends FlutterScreenRecordingPlatform {
   String? mimeType;
 
   static registerWith(Registrar registrar) {
-    FlutterScreenRecordingPlatform.instance = WebFlutterScreenRecording();
+    FlutterScreenSharingPlatform.instance = WebFlutterScreenRecording();
   }
 
   @override

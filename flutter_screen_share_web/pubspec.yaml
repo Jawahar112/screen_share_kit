@@ -2,6 +2,7 @@ name: flutter_screen_sharing_web
 description: Web platform implementation of screen_share_kit
 version: 1.0.0
 homepage: "https://github.com/Jawahar112/screen_share_kit/tree/main/flutter_screen_share_web"
+publish_to: none
 
 environment:
   sdk: ">=2.12.0 <4.0.0"
@@ -10,7 +11,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  screen_share_platform_interface: ^1.0.0
+  screen_share_platform_interface:
+    git:
+      url: https://github.com/Jawahar112/screen_share_kit.git
+      path: flutter_screen_share_platform_interface
 
   flutter_web_plugins:
     sdk: flutter
