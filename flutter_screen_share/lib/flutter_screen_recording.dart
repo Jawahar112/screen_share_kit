@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_foreground_task/flutter_foreground_task.dart';
-import 'package:flutter_screen_recording_platform_interface/flutter_screen_recording_platform_interface.dart';
+import 'package:screen_share_platform_interface/flutter_screen_recording_platform_interface.dart';
 
 class FlutterScreenRecording {
   static Future<bool> StartShareScreen(String name, {String? titleNotification, String? messageNotification}) async {
@@ -14,7 +14,7 @@ class FlutterScreenRecording {
       if (messageNotification == null) {
         messageNotification = "";
       }
-      final bool start = await FlutterScreenRecordingPlatform.instance.startRecordScreen(
+      final bool start = await FlutterScreenSharingPlatform.instance.startRecordScreen(
         name,
         notificationTitle: titleNotification,
         notificationMessage: messageNotification,
@@ -38,7 +38,7 @@ class FlutterScreenRecording {
       if (messageNotification == null) {
         messageNotification = "";
       }
-      final bool start = await FlutterScreenRecordingPlatform.instance.startRecordScreenAndAudio(
+      final bool start = await FlutterScreenSharingPlatform.instance.startRecordScreenAndAudio(
         name,
         notificationTitle: titleNotification,
         notificationMessage: messageNotification,
@@ -53,7 +53,7 @@ class FlutterScreenRecording {
 
   static Future<String> get stopShareScreen async {
     try {
-      final String path = await FlutterScreenRecordingPlatform.instance.stopRecordScreen;
+      final String path = await FlutterScreenSharingPlatform.instance.stopRecordScreen;
       return path;
     } catch (err) {
       print("stopRecordScreen err");

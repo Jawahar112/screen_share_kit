@@ -62,14 +62,8 @@
       "languageVersion": "3.0"
     },
     {
-      "name": "flutter_screen_recording_platform_interface",
-      "rootUri": "file:///C:/Users/Admin/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_screen_recording_platform_interface-1.0.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "flutter_screen_recording_web",
-      "rootUri": "file:///C:/Users/Admin/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_screen_recording_web-1.0.8",
+      "name": "flutter_screen_sharing_web",
+      "rootUri": "file:///C:/Users/Admin/AppData/Local/Pub/Cache/git/screen_share_kit-20bdbd1fd4765d7ac6e9bffe4ca84f9b5c7b7fa1/flutter_screen_share_web",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -123,9 +117,9 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///C:/Users/Admin/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.16.0",
+      "rootUri": "file:///C:/Users/Admin/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.17.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.5"
     },
     {
       "name": "path",
@@ -162,6 +156,12 @@
       "rootUri": "file:///C:/Users/Admin/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.8",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "screen_share_platform_interface",
+      "rootUri": "file:///C:/Users/Admin/AppData/Local/Pub/Cache/git/screen_share_kit-20bdbd1fd4765d7ac6e9bffe4ca84f9b5c7b7fa1/flutter_screen_share_platform_interface",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "shared_preferences",
@@ -243,7 +243,7 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///C:/Users/Admin/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.7.6",
+      "rootUri": "file:///C:/Users/Admin/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.7.7",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     },
@@ -285,8 +285,8 @@
     }
   ],
   "generator": "pub",
-  "generatorVersion": "3.9.2",
+  "generatorVersion": "3.10.1",
   "flutterRoot": "file:///C:/flutter",
-  "flutterVersion": "3.35.3",
+  "flutterVersion": "3.38.3",
   "pubCache": "file:///C:/Users/Admin/AppData/Local/Pub/Cache"
 }
