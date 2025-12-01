@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'flutter_screen_recording_platform_interface.dart';
 
 class MethodChannelFlutterScreenRecording
-    extends FlutterScreenRecordingPlatform {
+    extends FlutterScreenSharingPlatform {
   static const MethodChannel _channel =
       const MethodChannel('flutter_screen_recording');
 

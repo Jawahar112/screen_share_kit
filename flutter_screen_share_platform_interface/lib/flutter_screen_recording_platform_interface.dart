@@ -4,25 +4,25 @@ import 'dart:async';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'method_channel_flutter_screen_recording.dart';
 
-abstract class FlutterScreenRecordingPlatform extends PlatformInterface {
+abstract class FlutterScreenSharingPlatform extends PlatformInterface {
   /// Constructs a UrlLauncherPlatform.
-  FlutterScreenRecordingPlatform() : super(token: _token);
+  FlutterScreenSharingPlatform() : super(token: _token);
 
   static final Object _token = Object();
 
-  static FlutterScreenRecordingPlatform _instance =
+  static FlutterScreenSharingPlatform _instance =
       MethodChannelFlutterScreenRecording();
 
-  /// The default instance of [FlutterScreenRecordingPlatform] to use.
+  /// The default instance of [FlutterScreenSharingPlatform] to use.
   ///
   /// Defaults to [MethodChannelUrlLauncher].
-  static FlutterScreenRecordingPlatform get instance => _instance;
+  static FlutterScreenSharingPlatform get instance => _instance;
 
   /// Platform-specific plugins should set this with their own platform-specific
   /// class that extends [UrlLauncherPlatform] when they register themselves.
   // TODO(amirh): Extract common platform interface logic.
   // https://github.com/flutter/flutter/issues/43368
-  static set instance(FlutterScreenRecordingPlatform instance) {
+  static set instance(FlutterScreenSharingPlatform instance) {
     PlatformInterface.verifyToken(instance, _token);
     _instance = instance;
   }
